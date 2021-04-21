@@ -66,7 +66,7 @@ body main #link-grid .boit .story {
   justify-content: center;
   color: white;
   font-family: "Indie Flower";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 body main #link-grid .boit .story:hover {
   color: #cec9c9;
@@ -84,7 +84,7 @@ body main #link-grid .boit .who {
 
 @media screen and (min-width: 576px) {
   body {
-    background: gray;
+    background: #b9b9b9;
   }
   body header {
     background: url(../img/ganesh-3698942_1920.jpg) center/cover;
@@ -136,12 +136,15 @@ body main #link-grid .boit .who {
   }
   body main #link-grid .boit {
     display: flex;
-    width: 80%;
+    width: 50%;
   }
   body main #link-grid .boit .link-text {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
+  }
+  body main #link-grid .boit .link h3 {
+    display: none;
   }
 }
 

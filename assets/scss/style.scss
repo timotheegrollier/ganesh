@@ -62,7 +62,7 @@ body {
           justify-content: center;
           color: rgb(255, 255, 255);
           font-family: "Indie Flower";
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           &:hover {
             color: rgb(206, 201, 201);
             transform: scale(1.1);
@@ -84,7 +84,7 @@ body {
 
 @media screen and(min-width:576px) {
   body {
-    background: gray;
+    background: rgb(185, 185, 185);
     header {
       background: url(../img/ganesh-3698942_1920.jpg) center/cover;
       height: 30vh;
@@ -138,11 +138,16 @@ body {
         grid-template-rows: repeat(4, 1fr);
         .boit {
           display: flex;
-          width: 80%;
+          width: 50%;
           .link-text {
             display: flex;
             flex-direction: column;
-            width: 60%;
+            width: 70%;
+          }
+          .link {
+            h3 {
+              display: none;
+            }
           }
         }
       }
