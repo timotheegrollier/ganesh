@@ -9,8 +9,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: url(../img/tree-736881_1280.jpg) center/cover fixed; */
-  background: gray;
+  background: url(../img/tree-736881_1280.jpg) center/cover fixed;
 }
 body a {
   text-decoration: none;
@@ -84,6 +83,9 @@ body main #link-grid .boit .who {
 }
 
 @media screen and (min-width: 576px) {
+  body {
+    background: gray;
+  }
   body header {
     background: url(../img/ganesh-3698942_1920.jpg) center/cover;
     height: 30vh;
