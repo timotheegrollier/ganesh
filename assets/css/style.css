@@ -20,6 +20,26 @@ body header {
   flex-direction: column;
   align-items: center;
   height: 15vh;
+  position: relative;
+}
+body header .burger-menu {
+  width: 100%;
+  user-select: none;
+  transition: 1s ease-in-out;
+}
+body header .burger-menu ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 1rem;
+}
+body header .burger-menu ul a {
+  color: white;
+}
+body header .burger-menu ul a:hover {
+  color: #cec9c9;
 }
 body header #lg-header {
   display: none;
@@ -91,6 +111,9 @@ body main #link-grid .boit .who {
     height: 30vh;
   }
   body header .fas {
+    display: none;
+  }
+  body header .burger-menu {
     display: none;
   }
   body header #lg-header {
