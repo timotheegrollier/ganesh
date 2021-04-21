@@ -1,6 +1,146 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-header h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background: url(../img/tree-736881_1280.jpg) center/cover fixed; */
+  background: gray;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+}
+body header #lg-header {
+  display: none;
+}
+body header h1 {
   font-family: "Indie Flower", cursive;
+  font-size: 3rem;
+}
+body header i {
+  font-size: 2rem;
+}
+body main {
+  height: 100%;
+  margin-top: 30px;
+}
+body main #link-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body main #link-grid .boit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body main #link-grid .boit .link-text {
+  display: none;
+}
+body main #link-grid .boit .link {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+body main #link-grid .boit .story {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background: url(../img/ganesh-4419043_1280.jpg) center/cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-family: "Indie Flower";
+  font-size: 1.4rem;
+}
+body main #link-grid .boit .story:hover {
+  color: #cec9c9;
+  transform: scale(1.1);
+}
+body main #link-grid .boit .religion {
+  background: url(../img/hindu-3732713_1920.jpg) center/cover;
+}
+body main #link-grid .boit .art {
+  background: url(../img/ganesh-3692779_1920.jpg) center/cover;
+}
+body main #link-grid .boit .who {
+  background: url(../img/clouds-808749_1920.jpg) center/cover;
+}
+
+@media screen and (min-width: 576px) {
+  body header {
+    background: url(../img/ganesh-3698942_1920.jpg) center/cover;
+    height: 30vh;
+  }
+  body header .fas {
+    display: none;
+  }
+  body header #lg-header {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+  }
+  body header #lg-header ul {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  body header #lg-header ul a {
+    text-decoration: none;
+    color: white;
+    font-family: "Indie Flower";
+    font-size: 1.5rem;
+  }
+  body header #lg-header ul a:hover {
+    color: #cec9c9;
+  }
+  body main main {
+    display: flex;
+    align-items: center;
+  }
+  body main #link-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body main {
+    margin: 0;
+  }
+  body main #link-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  body main #link-grid .boit {
+    display: flex;
+    width: 80%;
+  }
+  body main #link-grid .boit .link-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

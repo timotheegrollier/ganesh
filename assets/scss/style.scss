@@ -1,7 +1,151 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+  }
+  /* background: url(../img/tree-736881_1280.jpg) center/cover fixed; */
+  background: gray;
+  header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    #lg-header {
+      display: none;
+    }
+    h1 {
+      font-family: "Indie Flower", cursive;
+      font-size: 3rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+  }
+  main {
+    height: 100%;
+    margin-top: 30px;
 
-header {
-  h1 {
-    font-family: "Indie Flower", cursive;
+    #link-grid {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .boit {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        .link-text {
+          display: none;
+        }
+        .link {
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+        }
+        .story {
+          border: 1px solid black;
+          width: 100px;
+          height: 100px;
+          background: url(../img/ganesh-4419043_1280.jpg) center/cover;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          color: rgb(255, 255, 255);
+          font-family: "Indie Flower";
+          font-size: 1.4rem;
+          &:hover {
+            color: rgb(206, 201, 201);
+            transform: scale(1.1);
+          }
+        }
+        .religion {
+          background: url(../img/hindu-3732713_1920.jpg) center/cover;
+        }
+        .art {
+          background: url(../img/ganesh-3692779_1920.jpg) center/cover;
+        }
+        .who {
+          background: url(../img/clouds-808749_1920.jpg) center/cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:576px) {
+  body {
+    header {
+      background: url(../img/ganesh-3698942_1920.jpg) center/cover;
+      height: 30vh;
+      .fas {
+        display: none;
+      }
+      #lg-header {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        ul {
+          display: flex;
+          width: 100vw;
+          justify-content: space-around;
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: white;
+            font-family: "Indie Flower";
+            font-size: 1.5rem;
+            &:hover {
+              color: rgb(206, 201, 201);
+            }
+          }
+        }
+      }
+    }
+    main {
+      main {
+        display: flex;
+        align-items: center;
+      }
+      #link-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    main {
+      margin: 0;
+      #link-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        .boit {
+          display: flex;
+          width: 80%;
+          .link-text {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+          }
+        }
+      }
+    }
   }
 }
